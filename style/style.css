@@ -1,0 +1,13 @@
+.red {
+    background-image: url('../images/forumIMG.jpg');
+    /* background-color: #C10000; */
+}
+
+.pink {
+    background-color: #FFDBDB;
+}
+
+.darkRed {
+    background-color: #C10000;
+    color:white;
+}
