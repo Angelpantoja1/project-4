@@ -2,7 +2,13 @@
     background-image: url('../images/forumIMG.jpg');
     /* background-color: #C10000; */
 }
-
+.scroll{
+    background-image: url('../images/scroll.jpg');
+    width: 100%;
+}
+.pinkPattern{
+    background-image: url('../images/pinkpattern.jpg');
+}
 .pink {
     background-color: #FFDBDB;
 }
@@ -22,4 +28,5 @@
 }
 a{
     color: black;
+    font-weight: bold;
 }
