@@ -1,5 +1,6 @@
-let menuInject = document.getElementById('menuInject');
-let menu = false;
+let inject = document.getElementById('inject');
+/* let menuInject = document.getElementById('menuInject'); */
+let menu = true;
 
 function injectHtml(url, ) {
 
@@ -14,6 +15,9 @@ function injectHtml(url, ) {
             if (url === '../site/index.html') {
                 loadIndex(myArr);
             }
+            else if (url === '../site/header.html') {
+                loadHeader(myArr);
+            }
             else if (url === '../site/menu.html') {
                 loadMenu(myArr);
             }
@@ -26,22 +30,28 @@ function injectHtml(url, ) {
     xmlhttp.send();
 }
 
-function loadIndex(info) {
+/* function loadIndex(info) {   
+} */
+function loadHeader(info) {
     inject.innerHTML = info;
-    let menu = document.getElementById('menu')
-    menu.addEventListener('click', function(e){
+    /* menuInject.innerHTML = info; */
+    let open = document.getElementById('open')
+    let menuInject = document.getElementById('menuInject');
+    open.addEventListener('click', function(e){
         if(menu == true){
             menu = false;
             injectHtml('../site/menu.html')
+            open.innerText = "Click Here to Close Menu";
         }else{
             menu = true;
-            injectHtml('../site/index.html')
+            menuInject.innerHTML = "";
+            open.innerText= "Click Here to Open Menu";
+
         }
     });
-    
 }
 function loadMenu(info) {
-    inject.innerHTML = info;
+    menuInject.innerHTML = info;
 }
 
-injectHtml('../site/index.html')
+injectHtml('../site/header.html')
