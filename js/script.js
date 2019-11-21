@@ -30,19 +30,18 @@ function loadIndex(info) {
     inject.innerHTML = info;
     let menu = document.getElementById('menu')
     menu.addEventListener('click', function(e){
-        if(menu == false){
+        if(menu == true){
             menu = false;
-            injectHtml('../site/index.html')
-        }else{
-            menu = true
             injectHtml('../site/menu.html')
+        }else{
+            menu = true;
+            injectHtml('../site/index.html')
         }
     });
     
 }
 function loadMenu(info) {
     inject.innerHTML = info;
-    
 }
 
 injectHtml('../site/index.html')
