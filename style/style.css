@@ -33,6 +33,10 @@ a{
 .opaque{
     opacity: 0%;
 }
+.blue{
+    background-color: blue;
+    color: white;
+}
 /* p{
     background-color: black;
 } */
