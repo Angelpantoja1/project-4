@@ -27,6 +27,19 @@
 
 }
 a{
-    color: black;
+    color: white;
     font-weight: bold;
 }
+.opaque{
+    opacity: 0%;
+}
+.blue{
+    background-color: blue;
+    color: white;
+}
+/* p{
+    background-color: black;
+} */
+/* .menuSize{
+    font-size: 15px;
+} */

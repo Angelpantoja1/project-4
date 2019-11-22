@@ -12,10 +12,7 @@ function injectHtml(url, ) {
 
         if (this.readyState == 4 && this.status == 200) {
             let myArr = this.responseText;
-            if (url === '../site/index.html') {
-                loadIndex(myArr);
-            }
-            else if (url === '../site/header.html') {
+            if (url === '../site/header.html') {
                 loadHeader(myArr);
             }
             else if (url === '../site/menu.html') {
@@ -35,17 +32,17 @@ function injectHtml(url, ) {
 function loadHeader(info) {
     inject.innerHTML = info;
     /* menuInject.innerHTML = info; */
-    let open = document.getElementById('open')
+    let openMenu = document.getElementById('openMenu')
     let menuInject = document.getElementById('menuInject');
-    open.addEventListener('click', function(e){
+    openMenu.addEventListener('click', function(e){
         if(menu == true){
             menu = false;
             injectHtml('../site/menu.html')
-            open.innerText = "Click Here to Close Menu";
+            openMenu.innerText = "Click Here to Close Menu";
         }else{
             menu = true;
             menuInject.innerHTML = "";
-            open.innerText= "Click Here to Open Menu";
+            openMenu.innerText= "Click Here to Open Menu";
 
         }
     });
