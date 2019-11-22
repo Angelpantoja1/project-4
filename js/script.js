@@ -35,17 +35,17 @@ function injectHtml(url, ) {
 function loadHeader(info) {
     inject.innerHTML = info;
     /* menuInject.innerHTML = info; */
-    let open = document.getElementById('open')
+    let openMenu = document.getElementById('openMenu')
     let menuInject = document.getElementById('menuInject');
-    open.addEventListener('click', function(e){
+    openMenu.addEventListener('click', function(e){
         if(menu == true){
             menu = false;
             injectHtml('../site/menu.html')
-            open.innerText = "Click Here to Close Menu";
+            openMenu.innerText = "Click Here to Close Menu";
         }else{
             menu = true;
             menuInject.innerHTML = "";
-            open.innerText= "Click Here to Open Menu";
+            openMenu.innerText= "Click Here to Open Menu";
 
         }
     });
