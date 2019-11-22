@@ -30,3 +30,12 @@ a{
     color: black;
     font-weight: bold;
 }
+.opaque{
+    opacity: 0%;
+}
+/* p{
+    background-color: black;
+} */
+/* .menuSize{
+    font-size: 15px;
+} */

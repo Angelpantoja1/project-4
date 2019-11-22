@@ -1,34 +1,36 @@
 <div class="container">
-    <div class="row pinkPattern mt-3 pt-3">
+        <a id="home"></a>
+    <div class="row pinkPattern pt-3 fixed-top">
         <div class="col-2 pb-0">
-            <a href="/" class="d-flex justify-content-center size">Home</a>
+            <a href="#home" class="d-flex justify-content-center size">Home</a>
         </div>
         <div class="col d-flex justify-content-center size pb-0">
             <p>|</p>
         </div>
         <div class="col-2  pb-0">
-            <a href="/" class="d-flex justify-content-center size">Menu</a>
+            <a href="#menu" class="d-flex justify-content-center size">Menu</a>
         </div>
         <div class="col d-flex justify-content-center size pb-0">
             <p>|</p>
         </div>
         <div class="col-2 pb-0">
-            <a href="/" class="d-flex justify-content-center size">Contact Us</a>
+            <a href="#contact" class="d-flex justify-content-center size">Contact Us</a>
         </div>
         <div class="col d-flex justify-content-center size pb-0">
             <p>|</p>
         </div>
         <div class="col-2 pb-0">
-            <a href="/" class="d-flex justify-content-center size">Reviews</a>
+            <a href="#review" class="d-flex justify-content-center size">Reviews</a>
         </div>
     </div>
     <div class="col-12 pt-5 d-flex justify-content-center">
         <img src="../images/ForumLogo.png" alt="logo" class="logoStyle col-6 ">
     </div>
     <hr>
+    <a id="menu"></a>
     <div class="row">
-        <div class="col d-flex justify-content-center pinkPattern">
-            <p class="size"><strong>Welcome to our restaurant</strong></p>
+        <div class="col d-flex justify-content-center darkRed size">
+            <h2 class=""><strong>Welcome to our restaurant</strong></h2>
         </div>
     </div>
     <div class="row">
@@ -47,8 +49,9 @@
     </div>
     <hr>
     <div class="row">
+            <a id="contact"></a>
         <div class="size col-12 d-flex justify-content-center darkRed">
-            <h2><strong>Menu</strong></h2>
+                <h2 class=""><strong>Menu</strong></h2>
         </div>
         <div class="col-12 d-flex justify-content-center pinkPattern">
             <p id="open" class="">Click Here to Open Menu</p>
@@ -58,7 +61,7 @@
     <hr>
     <div class="row pink">
         <div class="size col-12 d-flex justify-content-center darkRed">
-            <h2><strong>Contact Us</strong></h2>
+                <h2 class=""><a id="contact"><strong>Contact US</strong></a></h2>
         </div>
         <div class="col-6 pinkPattern py-3">
             <img src="../images/map.jpg" alt="map" width="100%">
@@ -74,7 +77,7 @@
     </div>
     <div class="row pt-5">
         <div class="size col-12 d-flex justify-content-center darkRed">
-            <h2><strong>Reviews</strong></h2>
+                <h2 class=""><a id="review"><strong>Reviews</strong></a></h2>
         </div>
         <div class="col-12 d-flex justify-content-center pinkPattern">
             <button class="blue"><a class="blue"
@@ -86,7 +89,7 @@
                     target="_blank">Tweet</a>
             </button>
         </div>
-            <div class="col-12 d-flex justify-content-center pink">
+            <div class="col-12 d-flex justify-content-center pinkPattern">
                 <form>
                     <div class="form-group">
                         <label for="formGroupExampleInput">Name</label>
@@ -95,11 +98,11 @@
                     <div class="form-group">
                         <label for="formGroupExampleInput2">Email</label>
                         <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email">
-                        <label for="txtarea">Comments</label>
                     </div>
                     <div>
-                        <textarea name="comments" id="" cols="30" rows="5"></textarea>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <label for="txtarea">Comments</label>
+                        <textarea name="comments" id="txtarea" cols="30" rows="5"></textarea>
+                        <button type="submit" class="btn">Submit</button>
                     </div>
                 </form>
             </div>
