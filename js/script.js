@@ -12,10 +12,7 @@ function injectHtml(url, ) {
 
         if (this.readyState == 4 && this.status == 200) {
             let myArr = this.responseText;
-            if (url === '../site/index.html') {
-                loadIndex(myArr);
-            }
-            else if (url === '../site/header.html') {
+            if (url === '../site/header.html') {
                 loadHeader(myArr);
             }
             else if (url === '../site/menu.html') {
